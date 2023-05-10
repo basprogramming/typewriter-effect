@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.typewritter h1{
+    color: #fff;
+    font-family: monospace;
+    font-size: 50px;
+    overflow: hidden;
+    border-right: 10px solid #fff;
+    animation : 
+        typing 2s steps(13, end),
+        blinking 0.5s ease infinite;
+}
+
+@keyframes typing {
+    from  { width : 0 }
+    to { width: 100% }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent }
+    50% { border-color: #00AC00 }
+} 
+@keyframes blinking2 {
+    from { border-color: transparent }
+    50% { border-color: #00AC00 }
+    to { border-color: transparent }
+} 
